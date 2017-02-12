@@ -19,17 +19,19 @@ app.use(views(__dirname, {map: {ejs: 'ejs'}}));
 app.use(require('koa-static')(path.join(__dirname, 'static')));
 app.use(router.routes()).use(router.allowedMethods());
 
-router.get('*', (req, res) => {
+router.get('*', function * () {
     match(
-        {routes, location: req.url},
+        {routes, location: this.req.url},
         (err, redirectLocation, renderProps) => {
 
             if (err) {
-                return res.status(500).send(err.message);
+                this.status = 500;
+                this.body = err.message;
             }
 
             if (redirectLocation) {
-                return res.redirect(302, redirectLocation.pathname + redirectLocation.search);
+                this.status = 302;
+                this.redirect(redirectLocation.pathname + redirectLocation.search);
             }
 
             let markup;
@@ -37,10 +39,9 @@ router.get('*', (req, res) => {
                 markup = renderToString(<RouterContext {...renderProps}/>);
             } else {
                 markup = renderToString(<NotFoundPage/>);
-                res.status(404);
+                this.status = 404;
             }
-
-            return res.render('index', {markup});
+            return views('index', {markup});
         }
     );
 });
