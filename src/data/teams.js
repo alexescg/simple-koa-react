@@ -9,6 +9,12 @@ const teams = [
         'link': 'https://en.wikipedia.org/wiki/Chelsea_F.C.',
         'medals' : [
             {
+                'season' : '2017-2018', 'place' : 5
+            },
+            {
+                'season' : '2016-2017', 'place' : 1
+            },
+            {
                 'season' : '2015-2016', 'place' : 10
             },
             {
@@ -28,6 +34,12 @@ const teams = [
         'nickname' : 'Red Devils',
         'link': 'https://en.wikipedia.org/wiki/Manchester_United_F.C.',
         'medals' : [
+            {
+                'season' : '2017-2018', 'place' : 2
+            },
+            {
+                'season' : '2016-2017', 'place' : 6
+            },
             {
                 'season' : '2015-2016', 'place' : 5
             },
@@ -49,6 +61,12 @@ const teams = [
         'link': 'https://en.wikipedia.org/wiki/Manchester_City_F.C.',
         'medals' : [
             {
+                'season' : '2017-2018', 'place' : 1
+            },
+            {
+                'season' : '2016-2017', 'place' : 3
+            },
+            {
                 'season' : '2015-2016', 'place' : 4
             },
             {
@@ -68,6 +86,12 @@ const teams = [
         'nickname' : 'Gunners',
         'link': 'https://en.wikipedia.org/wiki/Arsenal_F.C.',
         'medals' : [
+            {
+                'season' : '2017-2018', 'place' : 6
+            },
+            {
+                'season' : '2016-2017', 'place' : 5
+            },
             {
                 'season' : '2015-2016', 'place' : 2
             },
@@ -89,6 +113,12 @@ const teams = [
         'link': 'https://en.wikipedia.org/wiki/Liverpool_F.C.',
         'medals' : [
             {
+                'season' : '2017-2018', 'place' : 4
+            },
+            {
+                'season' : '2016-2017', 'place' : 4
+            },
+            {
                 'season' : '2015-2016', 'place' : 8
             },
             {
@@ -108,6 +138,12 @@ const teams = [
         'nickname' : 'Spurs',
         'link': 'https://en.wikipedia.org/wiki/Tottenham_Hotspur_F.C.',
         'medals' : [
+            {
+                'season' : '2017-2018', 'place' : 3
+            },
+            {
+                'season' : '2016-2017', 'place' : 2
+            },
             {
                 'season' : '2015-2016', 'place' : 3
             },
